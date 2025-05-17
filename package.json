@@ -1,0 +1,16 @@
+{
+  "name": "poc-express-swagger-ts",
+  "version": "0.0.0",
+  "description": "mono repo poc express swagger typescript",
+  "author": "imza <qnoy.rifky@gmail.com>",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "dev:all": "concurrently --names \"decorator-swagger-ts,jsdoc-swagger-ts\" \"pnpm --filter decorator-swagger-ts dev\" \"pnpm --filter jsdoc-swagger-ts dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
